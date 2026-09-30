@@ -30,7 +30,9 @@
         "projecturl":  "",
         "images":  [
                        "/images/projects/project-01/project-01-01.webp",
-                       "/images/projects/project-01/project-01-02.webp"
+                       "/images/projects/project-01/project-01-02.webp",
+                       "/images/projects/project-01/project-01-main-01.webp",
+                       "/images/projects/project-01/project-01-main-02.webp"
                    ]
     },
     {
@@ -70,7 +72,8 @@
                        "/images/projects/project-02/project-02-02.webp",
                        "/images/projects/project-02/project-02-03.webp",
                        "/images/projects/project-02/project-02-04.webp",
-                       "/images/projects/project-02/project-02-05.webp"
+                       "/images/projects/project-02/project-02-05.webp",
+                       "/images/projects/project-02/project-02-main-01.webp"
                    ]
     },
     {
@@ -196,7 +199,9 @@
                        "/images/projects/project-05/project-05-04.webp",
                        "/images/projects/project-05/project-05-05.webp",
                        "/images/projects/project-05/project-05-06.webp",
-                       "/images/projects/project-05/project-05-07.webp"
+                       "/images/projects/project-05/project-05-07.webp",
+                       "/images/projects/project-05/project-05-main-01.webp",
+                       "/images/projects/project-05/project-05-main-02.webp"
                    ]
     },
     {
@@ -250,7 +255,8 @@
         "images":  [
                        "/images/projects/project-07/project-07-01.webp",
                        "/images/projects/project-07/project-07-02.webp",
-                       "/images/projects/project-07/project-07-03.webp"
+                       "/images/projects/project-07/project-07-03.webp",
+                       "/images/projects/project-07/project-07-main-01.webp"
                    ]
     },
     {
