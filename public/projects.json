@@ -1,0 +1,471 @@
+﻿[
+    {
+        "id":  "project-01",
+        "order":  1,
+        "title":  "AffecCare：基於行為回饋之隱私保護型 EAP 智能推薦引擎",
+        "members":  [
+                        {
+                            "studentId":  "41271202H",
+                            "name":  "洪明凱"
+                        },
+                        {
+                            "studentId":  "41271201H",
+                            "name":  "高郁城"
+                        },
+                        {
+                            "studentId":  "41271121H",
+                            "name":  "蔡廷軒"
+                        },
+                        {
+                            "studentId":  "41271118H",
+                            "name":  "柯亮宇"
+                        }
+                    ],
+        "advisors":  [
+                         "林坤誼",
+                         "蔡芸琤"
+                     ],
+        "description":  "AffecCare 聚焦企業內部溝通效率與個人化不足的問題，透過員工特質與行為資料建立主動關懷分數，協助 HR 辨識不同員工的需求，並提供個人化 EAP 內容推薦。系統也加入回饋按鈕，讓員工能即時表達內容是否符合需求，持續優化推薦結果。我們也重視員工的資訊安全，在保障個人資料隱私的前提下進行分析與推薦，打造精準且安心的職場關懷體驗。",
+        "showPhotoArea":  true,
+        "projecturl":  "",
+        "images":  [
+                       "/images/projects/project-01/project-01-01.webp",
+                       "/images/projects/project-01/project-01-02.webp"
+                   ]
+    },
+    {
+        "id":  "project-02",
+        "order":  2,
+        "title":  "SEL互動式情緒遊戲盒",
+        "members":  [
+                        {
+                            "studentId":  "41271101H",
+                            "name":  "羅萲"
+                        },
+                        {
+                            "studentId":  "41271219H",
+                            "name":  "邱妍心"
+                        },
+                        {
+                            "studentId":  "41271222H",
+                            "name":  "李介文"
+                        },
+                        {
+                            "studentId":  "41271110H",
+                            "name":  "吳念庭"
+                        },
+                        {
+                            "studentId":  "41271111H",
+                            "name":  "吳冠志"
+                        }
+                    ],
+        "advisors":  [
+                         "簡佑宏"
+                     ],
+        "description":  "面對兒童身心科門診三年成長56%的嚴峻現況，我們開發「SEL互動式情緒遊戲盒」，結合通用設計學習與社會情緒學習理論，打造專為6-9歲兒童設計的多感官玩具。孩子透過遊玩療癒系刺蝟造型玩具，搭配繪本情境引導與任務練習觸發彈射機制及燈光回饋，將抽象情緒轉化為可觸摸、感知的具體經驗，讓每個孩子都能找到屬於自己的情緒探索方式，逐步建立自我覺察與自我管理能力。",
+        "showPhotoArea":  true,
+        "projecturl":  "",
+        "images":  [
+                       "/images/projects/project-02/project-02-01.webp",
+                       "/images/projects/project-02/project-02-02.webp",
+                       "/images/projects/project-02/project-02-03.webp",
+                       "/images/projects/project-02/project-02-04.webp",
+                       "/images/projects/project-02/project-02-05.webp"
+                   ]
+    },
+    {
+        "id":  "project-03",
+        "order":  3,
+        "title":  "看不見的磨合可視化:探討互動式實體裝置對中高齡職務工作再設計之影響",
+        "members":  [
+                        {
+                            "studentId":  "41271212H",
+                            "name":  "蔡柏元"
+                        },
+                        {
+                            "studentId":  "41271210H",
+                            "name":  "歐乃逸"
+                        },
+                        {
+                            "studentId":  "41271123H",
+                            "name":  "潘苡晴"
+                        },
+                        {
+                            "studentId":  "41271224H",
+                            "name":  "陳生好"
+                        }
+                    ],
+        "advisors":  [
+                         "陳怡靜"
+                     ],
+        "description":  "本專題目標在於透過調整職務情境以理解中高齡勞動力可負荷的工作要求以及所需輔助資源,以就讀於管理學領域之大專學生為目標對象,有助於其了解中高齡工作者的優勢與需協助之處,以增進台灣勞動力多元整合的概念,同時讓未來管理者理解,中高齡工作者不是不能做,而是需要適當職務再設計。",
+        "showPhotoArea":  false,
+        "projecturl":  "",
+        "images":  [
+                       "/images/projects/project-03/project-03-01.webp",
+                       "/images/projects/project-03/project-03-02.webp",
+                       "/images/projects/project-03/project-03-03.webp",
+                       "/images/projects/project-03/project-03-04.webp",
+                       "/images/projects/project-03/project-03-05.webp",
+                       "/images/projects/project-03/project-03-06.webp"
+                   ]
+    },
+    {
+        "id":  "project-04",
+        "order":  4,
+        "title":  "寶島地標回憶錄 — 透過地標NFC連結個人旅行故事",
+        "members":  [
+                        {
+                            "studentId":  "41271206H",
+                            "name":  "羅立茵"
+                        },
+                        {
+                            "studentId":  "41271211H",
+                            "name":  "蔡詠筑"
+                        },
+                        {
+                            "studentId":  "41271132H",
+                            "name":  "唐湘婷"
+                        },
+                        {
+                            "studentId":  "41271102H",
+                            "name":  "張菀宸"
+                        },
+                        {
+                            "studentId":  "41271204H",
+                            "name":  "廖盈琤"
+                        }
+                    ],
+        "advisors":  [
+                         "簡佑宏"
+                     ],
+        "description":  "現代人常面臨「數位囤積」的問題，旅行照片散落手機卻鮮少回顧。本專題開發一款結合 NFC 互動功能的台灣回憶地圖，以具身認知提供觸覺與視覺等多重回憶線索。使用者透過手機感應各縣市地標的 NFC 晶片，即可將相片上傳至專屬網頁相簿。專案整合 Rhino 建模、LaserCad 雷雕與實虛系統架構，讓無形的旅行記憶化為生活中可觸碰的風景。",
+        "showPhotoArea":  true,
+        "projecturl":  "",
+        "images":  [
+                       "/images/projects/project-04/project-04-01.webp",
+                       "/images/projects/project-04/project-04-02.webp",
+                       "/images/projects/project-04/project-04-03.webp",
+                       "/images/projects/project-04/project-04-04.webp",
+                       "/images/projects/project-04/project-04-05.webp",
+                       "/images/projects/project-04/project-04-06.webp",
+                       "/images/projects/project-04/project-04-07.webp",
+                       "/images/projects/project-04/project-04-08.webp",
+                       "/images/projects/project-04/project-04-09.webp",
+                       "/images/projects/project-04/project-04-10.webp",
+                       "/images/projects/project-04/project-04-11.webp"
+                   ]
+    },
+    {
+        "id":  "project-05",
+        "order":  5,
+        "title":  "音擬而起 OnomaRise",
+        "members":  [
+                        {
+                            "studentId":  "41271124H",
+                            "name":  "邱鈺婷"
+                        },
+                        {
+                            "studentId":  "41271114H",
+                            "name":  "李孟潔"
+                        },
+                        {
+                            "studentId":  "41271122H",
+                            "name":  "盧姵帆"
+                        },
+                        {
+                            "studentId":  "41271209H",
+                            "name":  "李佳璇"
+                        },
+                        {
+                            "studentId":  "41271214H",
+                            "name":  "呂雨璇"
+                        }
+                    ],
+        "advisors":  [
+                         "蔡芸琤",
+                         "林坤誼"
+                     ],
+        "description":  "「音擬而起」是一款用網頁視覺化的互動輔助學習工具，期待成為教學者或自學者的學習教材。以「樂理知識」功能為主要引導，使初學者認識音樂知識理論、了解音樂與聲音的形成。\n並以「調性網路」功能，進一步用點、線、面的方式，展示和弦的移動與變化，且可以匯入音訊，辨識出單音與和弦，呈現清晰和量化的聲音時間線。",
+        "showPhotoArea":  true,
+        "projecturl":  "",
+        "images":  [
+                       "/images/projects/project-05/project-05-01.webp",
+                       "/images/projects/project-05/project-05-02.webp",
+                       "/images/projects/project-05/project-05-03.webp",
+                       "/images/projects/project-05/project-05-04.webp",
+                       "/images/projects/project-05/project-05-05.webp",
+                       "/images/projects/project-05/project-05-06.webp",
+                       "/images/projects/project-05/project-05-07.webp"
+                   ]
+    },
+    {
+        "id":  "project-06",
+        "order":  6,
+        "title":  "STEM學習ip設計與推廣",
+        "members":  [
+                        {
+                            "studentId":  "41172035H",
+                            "name":  "楊佳珣"
+                        },
+                        {
+                            "studentId":  "41172046H",
+                            "name":  "尤騰毅"
+                        }
+                    ],
+        "advisors":  [
+                         "蔡其瑞"
+                     ],
+        "description":  "我們以都市常見的黑冠麻鷺為主角，創作四冊融合STEM機關、環境教育與生命教育的互動繪本。我們希望讀者透過親手操作機關陪伴「大笨鳥」完成覓食、尋枝、返巢與築巢任務，在探索與解決問題的過程中，學習與動物共存，培養同理與尊重，並藉由「根與芽」學習單將觀察轉化為實際的環境行動。",
+        "showPhotoArea":  true,
+        "projecturl":  "",
+        "images":  [
+                       "/images/projects/project-06/project-06-01.webp",
+                       "/images/projects/project-06/project-06-02.webp",
+                       "/images/projects/project-06/project-06-03.webp",
+                       "/images/projects/project-06/project-06-04.webp",
+                       "/images/projects/project-06/project-06-05.webp"
+                   ]
+    },
+    {
+        "id":  "project-07",
+        "order":  7,
+        "title":  "3D列印之電動船體設計與製作",
+        "members":  [
+                        {
+                            "studentId":  "41371901H",
+                            "name":  "吳堉安"
+                        },
+                        {
+                            "studentId":  "41371903H",
+                            "name":  "黃柏彰"
+                        }
+                    ],
+        "advisors":  [
+                         "張玉山"
+                     ],
+        "description":  "以「3D列印之電動船體設計與製作」為題，結合 3D建模、Arduino程式控制與機電整合技術。透過TT馬達差速轉向與精準的浮力重量估算，製作出能實際下水並由程式控制方向與速度的小型電動船。期望能應用於國中理化浮力單元與STEM教育，讓學生在實作中培養工程思維與問題解決能力。",
+        "showPhotoArea":  true,
+        "projecturl":  "",
+        "images":  [
+                       "/images/projects/project-07/project-07-01.webp",
+                       "/images/projects/project-07/project-07-02.webp",
+                       "/images/projects/project-07/project-07-03.webp"
+                   ]
+    },
+    {
+        "id":  "project-08",
+        "order":  8,
+        "title":  "AI職員情緒分析與HR智慧決策平台",
+        "members":  [
+                        {
+                            "studentId":  "41271213H",
+                            "name":  "陳楷荃"
+                        },
+                        {
+                            "studentId":  "41271220H",
+                            "name":  "林宸安"
+                        }
+                    ],
+        "advisors":  [
+                         "嚴萬軒"
+                     ],
+        "description":  "隨著職場競爭與工作壓力增加，職業倦怠已成為影響員工身心健康與企業績效的重要議題。本研究旨在開發結合人工智慧之智慧人力資源管理系統，透過聊天機器人蒐集文字與語氣特徵，運用自然語言處理進行情緒分析，並整合問卷及面部表情辨識資料，建立職業倦怠評估模型。系統將即時辨識高壓與潛在倦怠族群，提供個人化壓力調適及職涯規劃建議，以提升人力資源管理之即時性與精準性。",
+        "showPhotoArea":  true,
+        "projecturl":  "",
+        "images":  [
+                       "/images/projects/project-08/project-08-01.webp",
+                       "/images/projects/project-08/project-08-02.webp"
+                   ]
+    },
+    {
+        "id":  "project-09",
+        "order":  9,
+        "title":  "AI科技與倫理桌游：《AI Ethical Thinking Game》",
+        "members":  [
+                        {
+                            "studentId":  "41271215H",
+                            "name":  "周鈺軒"
+                        }
+                    ],
+        "advisors":  [
+                         "許庭嘉"
+                     ],
+        "description":  "本專題結合 AI 倫理、遊戲式學習與 AI 學習夥伴，透過桌遊情境與互動任務，引導國中生從生活案例中認識人工智慧可能帶來的隱私、偏見、責任與資訊真偽等議題。希望讓學生在「玩中學、學中想」，培養面對 AI 時的判斷力與倫理思辨能力。",
+        "showPhotoArea":  true,
+        "projecturl":  "",
+        "images":  [
+                       "/images/projects/project-09/project-09-01.webp",
+                       "/images/projects/project-09/project-09-02.webp",
+                       "/images/projects/project-09/project-09-03.webp",
+                       "/images/projects/project-09/project-09-04.webp"
+                   ]
+    },
+    {
+        "id":  "project-10",
+        "order":  10,
+        "title":  "守把手-BFRB 行為覺察與壓力調節整合裝置",
+        "members":  [
+                        {
+                            "studentId":  "41271218H",
+                            "name":  "白振廷"
+                        },
+                        {
+                            "studentId":  "41271120H",
+                            "name":  "林渝桓"
+                        },
+                        {
+                            "studentId":  "41271205H",
+                            "name":  "王玟晽"
+                        },
+                        {
+                            "studentId":  "41271116H",
+                            "name":  "陳芷彤"
+                        }
+                    ],
+        "advisors":  [
+                         "林坤誼"
+                     ],
+        "description":  "在現代社會中常常觀察到，有些人會無意識或有意識的摳皮膚、拔毛髮，這些身體重複行為長期下來可能會對身體造成危害。於是我們決定以此為研究主題，希望可以製作一個產品與手機軟體，以提醒使用者並減少摳抓行為的發生。",
+        "showPhotoArea":  false,
+        "projecturl":  "",
+        "images":  [
+                       "/images/projects/project-10/project-10-01.webp",
+                       "/images/projects/project-10/project-10-02.webp",
+                       "/images/projects/project-10/project-10-03.webp",
+                       "/images/projects/project-10/project-10-04.webp",
+                       "/images/projects/project-10/project-10-05.webp"
+                   ]
+    },
+    {
+        "id":  "project-11",
+        "order":  11,
+        "title":  "基於 SLII® 理論之管理模擬桌遊開發與學習成效驗證",
+        "members":  [
+                        {
+                            "studentId":  "41371904H",
+                            "name":  "謝博全"
+                        },
+                        {
+                            "studentId":  "41271104H",
+                            "name":  "李東璟"
+                        }
+                    ],
+        "advisors":  [
+                         "陳淑媛"
+                     ],
+        "description":  "本專題打造了一款虛實整合的教育訓練桌遊，旨在弭平培訓中的「知行落差」。作品以 SLII® 情境領導理論為基石，將抽象的管理決策具象化為實體卡牌，並由專屬 App 擔任輔助裁判，負責流程結算與案例解析。透過人機協同設計，玩家能全心聚焦於情境領導中的「診斷與配對」，在對弈互動中內化管理直覺，實現從理論認知到實務決策的深度轉化。",
+        "showPhotoArea":  false,
+        "projecturl":  "",
+        "images":  [
+                       "/images/projects/project-11/project-11-01.webp",
+                       "/images/projects/project-11/project-11-02.webp",
+                       "/images/projects/project-11/project-11-03.webp"
+                   ]
+    },
+    {
+        "id":  "project-12",
+        "order":  12,
+        "title":  "啟新驅動所",
+        "members":  [
+                        {
+                            "studentId":  "41071125H",
+                            "name":  "林世軒"
+                        },
+                        {
+                            "studentId":  "41271106H",
+                            "name":  "張語宸"
+                        },
+                        {
+                            "studentId":  "41271112H",
+                            "name":  "黃宇晟"
+                        },
+                        {
+                            "studentId":  "41271226H",
+                            "name":  "劉得誼"
+                        },
+                        {
+                            "studentId":  "41271113H",
+                            "name":  "劉文傑"
+                        }
+                    ],
+        "advisors":  [
+                         "林坤誼"
+                     ],
+        "description":  "本次專題以電動車為出發點，利用木工實作還原出了電動車輛傳動過程的課程教具，同時設計教案帶領學生探索動力傳遞的科學原理。教具內可清楚了解齒輪如調整轉速、扭力，也能比較「斜齒輪」在平順度以及降低噪音的優勢。此次專題也更進一步探討了複合齒輪在有限空間內的傳動效果、惰輪改變轉動方向的功能，並解析差速器如何允許左右輪轉速不同以利車輛轉彎。在配合教案的情況下，讓學生完整理解動力從馬達傳遞至車輪的運作機制。",
+        "showPhotoArea":  true,
+        "projecturl":  "",
+        "images":  [
+                       "/images/projects/project-12/project-12-01.webp",
+                       "/images/projects/project-12/project-12-02.webp",
+                       "/images/projects/project-12/project-12-03.webp"
+                   ]
+    },
+    {
+        "id":  "project-13",
+        "order":  13,
+        "title":  "UNITY × MediaPipe 互動系統整合實作——以大湖國小 VR 體驗為例",
+        "members":  [
+                        {
+                            "studentId":  "41271125H",
+                            "name":  "游靜靜"
+                        },
+                        {
+                            "studentId":  "41271221H",
+                            "name":  "樓冠佑"
+                        },
+                        {
+                            "studentId":  "41271227H",
+                            "name":  "陳宥均"
+                        }
+                    ],
+        "advisors":  [
+                         "丁玉良"
+                     ],
+        "description":  "本作品以「UNITY × MEDIAPIPE 互動系統整合實作」為主題，結合虛擬實境（Virtual Reality, VR）技術與手勢辨識技術，設計並製作一套具自然互動能力的虛擬體驗系統。本作品以 Unity 作為主要開發平台，透過 MediaPipe 進行手部關鍵點偵測與手勢辨識，讓使用者能以手部動作直接操作虛擬環境，提升人機互動的直覺性與沉浸感。\n作品開發過程包含 VR 場景建置、互動功能設計、手勢辨識系統整合與使用者體驗測試。透過攝影機取得使用者手部影像， MediaPipe 分析手勢狀態後，將辨識結果傳送至 Unity，使虛擬場景能即時產生對應互動效果。\n本作品亦應用於大湖國小校園 VR 導覽與虛擬學習體驗，透過學生實際操作與體驗，觀察 VR 結合手勢互動技術在教育環境中的應用成效。結果顯示，此系統能提升學生參與度、學習興趣與科技體驗感，展現 Unity 與 MediaPipe 整合於教育與互動設計領域的應用潛力。",
+        "showPhotoArea":  false,
+        "projecturl":  "",
+        "images":  [
+                       "/images/projects/project-13/project-13-01.webp",
+                       "/images/projects/project-13/project-13-02.webp"
+                   ]
+    },
+    {
+        "id":  "project-14",
+        "order":  14,
+        "title":  "數位轉譯角色空間互動系統",
+        "members":  [
+                        {
+                            "studentId":  "41271109H",
+                            "name":  "巫冠儀"
+                        },
+                        {
+                            "studentId":  "41271115H",
+                            "name":  "周庭伊"
+                        },
+                        {
+                            "studentId":  "41271126H",
+                            "name":  "廖振廷"
+                        },
+                        {
+                            "studentId":  "41271128H",
+                            "name":  "劉澤文"
+                        },
+                        {
+                            "studentId":  "41271208H",
+                            "name":  "康恩瑋"
+                        }
+                    ],
+        "advisors":  [
+                         "林坤誼"
+                     ],
+        "description":  "本系統針對迎新、新進員工培訓等成員彼此陌生、需要社交破冰的場域。這類場合中,參與者常因缺乏共同話題而選擇滑手機迴避,形成身處同一空間卻各自疏離的隔閡。「數位轉譯角色空間互動系統」不強迫參與者放下手機,而是將這份對數位媒介的依賴加以轉譯:主持人可透過系統發布配對任務與即時問答,引導參與者與他人破冰，個人在手機上的每一次互動,都會匯聚成大螢幕上的群體視覺,讓陌生人有一個自然而不尷尬的理由建立連結。",
+        "showPhotoArea":  true,
+        "projecturl":  "",
+        "images":  [
+                       "/images/projects/project-14/project-14-01.webp",
+                       "/images/projects/project-14/project-14-02.webp",
+                       "/images/projects/project-14/project-14-03.webp"
+                   ]
+    }
+]
