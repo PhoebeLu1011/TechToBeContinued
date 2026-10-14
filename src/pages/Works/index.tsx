@@ -1,12 +1,11 @@
 export default function Works() {
   return (
     <div style={{ width: '100%', boxSizing: 'border-box', overflowX: 'hidden' }}>
-      {/* 區塊 1：專屬深藍漸層 */}
-      <div style={{ ...styles.block, background: 'linear-gradient(180deg, #111e2e, #1c2d42)' }}>
+      <div style={styles.block}>
         <span style={styles.text}>[ WORKS TOTAL - 作品總覽 ]</span>
       </div>
-      <div style={{ ...styles.block, background: 'linear-gradient(180deg, #1c2d42, #121a24)' }} />
-      <div style={{ ...styles.block, background: 'linear-gradient(180deg, #121a24, #121212)', paddingBottom: '20vh' }} />
+      <div style={styles.block} />
+      <div style={{ ...styles.block, paddingBottom: '20vh' }} />
     </div>
   );
 }

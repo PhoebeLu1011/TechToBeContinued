@@ -1,3 +1,26 @@
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('./assets/fonts/century-gothic/centurygothic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  --font-latin: 'Century Gothic';
+  --font-zh: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+  --font-global: var(--font-latin), var(--font-zh);
+  --color-page-background: #c3d83f;
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('./assets/fonts/century-gothic/centurygothic_bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
 /* 1. 消除所有瀏覽器預設的間距，改用 border-box 方便計算寬高 */
 * {
   box-sizing: border-box;
@@ -5,13 +28,24 @@
   padding: 0;
 }
 
+html {
+  font-family: var(--font-global);
+}
+
 /* 2. 讓網頁最外層正常從上到下排列，不使用強制的 flex 置中 */
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background-color: #242424; /* 暗色背景 */
+  font-family: inherit;
+  background-color: var(--color-page-background);
   color: #ffffff;
   min-height: 100vh;
   line-height: 1.5;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
 }
 
 /* 3. 確保 React 的根節點也是正常流向，不限制最大寬度 */
@@ -19,18 +53,4 @@ body {
   width: 100%;
   display: block;
 }
-
-/* 4. 加上 RWD 斷點控制：當螢幕寬度小於 1024px 時切換為手機版 */
-@media (max-width: 1024px) {
-  /* 隱藏桌機版的橫式選單 */
-  .desktop-only {
-    display: none !important;
-  }
-  
-  /* 強制顯示手機版的漢堡按鈕 */
-  nav button {
-    display: block !important;
-  }
-}
-/* 💡 終極優化：除了首頁外，其他頁面自動加上上方留白，避免跟透明 Navbar 重疊 */
 
