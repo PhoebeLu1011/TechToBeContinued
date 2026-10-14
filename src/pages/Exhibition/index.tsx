@@ -1,12 +1,11 @@
 export default function Exhibition() {
   return (
     <div style={{ width: '100%', boxSizing: 'border-box', overflowX: 'hidden' }}>
-      {/* 區塊 1：專屬深綠漸層 */}
-      <div style={{ ...styles.block, background: 'linear-gradient(180deg, #11291b, #1d3d2a)' }}>
+      <div style={styles.block}>
         <span style={styles.text}>[ EXHIBITION INFO - 展場資訊 ]</span>
       </div>
-      <div style={{ ...styles.block, background: 'linear-gradient(180deg, #1d3d2a, #121f16)' }} />
-      <div style={{ ...styles.block, background: 'linear-gradient(180deg, #121f16, #121212)', paddingBottom: '20vh' }} />
+      <div style={styles.block} />
+      <div style={{ ...styles.block, paddingBottom: '20vh' }} />
     </div>
   );
 }

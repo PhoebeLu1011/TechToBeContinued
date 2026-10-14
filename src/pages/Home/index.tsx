@@ -4,21 +4,21 @@ export default function Home() {
     <div style={{ width: '100%', boxSizing: 'border-box' }}>
       
  
-      <div style={{ ...styles.block, background: 'linear-gradient(180deg, #1a1a1a, #3a2222)', height: '100vh', zIndex: 1 }}>
+      <div style={{ ...styles.block, height: '100vh', zIndex: 1 }}>
         <span style={styles.text}>[ HERO VISUAL SECTION ]</span>
       </div>
 
 
-      <div style={{ ...styles.block, background: 'linear-gradient(180deg, #3a2222, #1f2d2d)' }}>
+      <div style={styles.block}>
         <span style={styles.text}>[ SECTION 1 ]</span>
       </div>
 
 
-      <div style={{ ...styles.block, background: 'linear-gradient(180deg, #1f2d2d, #241f2d)' }}>
+      <div style={styles.block}>
         <span style={styles.text}>[ SECTION 2 ]</span>
       </div>
 
-      <div style={{ ...styles.block, background: 'linear-gradient(180deg, #241f2d, #121212)', paddingBottom: '20vh' }}>
+      <div style={{ ...styles.block, paddingBottom: '20vh' }}>
         <span style={styles.text}>[ END ]</span>
       </div>
       

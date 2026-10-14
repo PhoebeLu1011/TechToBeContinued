@@ -1,12 +1,11 @@
 export default function News() {
   return (
     <div style={{ width: '100%', boxSizing: 'border-box', overflowX: 'hidden' }}>
-      {/* 區塊 1：專屬深紫漸層 */}
-      <div style={{ ...styles.block, background: 'linear-gradient(180deg, #251430, #361d47)' }}>
+      <div style={styles.block}>
         <span style={styles.text}>[ LATEST NEWS - 最新消息 ]</span>
       </div>
-      <div style={{ ...styles.block, background: 'linear-gradient(180deg, #361d47, #1a0e21)' }} />
-      <div style={{ ...styles.block, background: 'linear-gradient(180deg, #1a0e21, #121212)', paddingBottom: '20vh' }} />
+      <div style={styles.block} />
+      <div style={{ ...styles.block, paddingBottom: '20vh' }} />
     </div>
   );
 }
