@@ -6,22 +6,6 @@
   color: #000;
 }
 
-body:has(.qa-page) .site-header:not(.is-menu-open) {
-  color: #000;
-}
-
-body:has(.qa-page) .site-header__link {
-  color: rgb(0 0 0 / 72%);
-}
-
-body:has(.qa-page) .site-header__link:hover {
-  color: #000;
-}
-
-body:has(.qa-page) .site-header:not(.is-menu-open) .site-header__menu-button {
-  color: #000;
-}
-
 .qa-hero {
   position: relative;
   height: 380px;

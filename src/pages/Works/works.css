@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'Noto Sans TC';
+  src: url('../../assets/fonts/century-gothic/NotoSansTC-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+.works-page {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #c3d83f;
+  color: #111;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 700;
+}
+
+.works-header {
+  position: relative;
+  height: 380px;
+}
+
+.works-title-image,
+.works-title-fallback {
+  position: absolute;
+  top: 223px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.works-title-image {
+  width: auto;
+  height: clamp(48px, 5.8vw, 71px);
+  object-fit: contain;
+}
+
+.works-title-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.works-title-fallback-small {
+  margin-bottom: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.works-mark-left {
+  position: absolute;
+  left: calc(50% - 205px);
+  top: 68px;
+  width: clamp(74px, 6.5vw, 96px);
+  height: auto;
+  object-fit: contain;
+}
+
+.works-mark-right {
+  position: absolute;
+  right: calc(50% - 210px);
+  top: 46px;
+  width: clamp(112px, 10vw, 148px);
+  height: auto;
+  object-fit: contain;
+}
+
+.works-section {
+  position: relative;
+  width: 100%;
+  padding: 20px 4% 130px;
+}
+
+.works-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 38px;
+}
+
+.works-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.works-image-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.works-image-area {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 12px solid rgba(0, 0, 0, 0.3);
+  background: rgba(128, 166, 51, 0.36);
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.works-image-link:hover .works-image-area,
+.works-image-link:focus-visible .works-image-area {
+  border-color: rgba(0, 0, 0, 0.55);
+  transform: translateY(-3px);
+}
+
+.works-image-link:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 4px;
+}
+
+.works-project-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.works-image-placeholder {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: clamp(10px, 1vw, 14px);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.works-project-title {
+  margin-top: 10px;
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  padding: 4px 6px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 13pt;
+  line-height: 1.2;
+  font-weight: 700;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.works-group-label {
+  margin-top: 10px;
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  padding: 4px 6px;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 13pt;
+  line-height: 1.2;
+}
+
+.works-side-arrow {
+  position: absolute;
+  left: 5%;
+  top: -30px;
+  font-size: 22px;
+  letter-spacing: -2px;
+}
+
+.works-bottom-arrow {
+  position: absolute;
+  right: 5%;
+  bottom: 72px;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .works-header {
+    height: 315px;
+  }
+
+  .works-title-image,
+  .works-title-fallback {
+    top: 188px;
+  }
+
+  .works-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .works-header {
+    height: 270px;
+  }
+
+  .works-title-image,
+  .works-title-fallback {
+    top: 161px;
+  }
+
+  .works-title-image {
+    height: 48px;
+  }
+
+  .works-mark-left {
+    left: 18px;
+    top: 56px;
+  }
+
+  .works-mark-right {
+    right: 18px;
+    top: 52px;
+  }
+
+  .works-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .works-section {
+    padding-inline: 6%;
+  }
+
+  .works-image-area {
+    border-width: 8px;
+  }
+}

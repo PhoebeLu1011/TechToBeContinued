@@ -1,0 +1,443 @@
+@font-face {
+  font-family: 'Noto Sans TC';
+  src: url('../../assets/fonts/century-gothic/NotoSansTC-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  src: url('../../assets/fonts/century-gothic/NotoSansTC-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+.project-detail-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 4% 54px;
+  overflow: hidden;
+  background: #c3d83f;
+  color: #111;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 400;
+}
+
+.project-gallery {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.project-gallery-frame {
+  position: relative;
+  width: 100%;
+  height: clamp(260px, 40vw, 500px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-gallery-image-wrap {
+  position: relative;
+  width: min(64%, 780px);
+  aspect-ratio: 3 / 2;
+}
+
+.project-gallery-image-button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 10px solid rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.project-gallery-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.project-gallery-arrow {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 42px;
+  height: 56px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.project-gallery-arrow-previous {
+  left: max(0px, calc((100% - min(64%, 780px)) / 4 - 21px));
+}
+
+.project-gallery-arrow-next {
+  right: max(0px, calc((100% - min(64%, 780px)) / 4 - 21px));
+}
+
+.project-gallery-arrow:focus-visible,
+.project-gallery-image-button:focus-visible,
+.project-image-lightbox-close:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+.project-gallery-controls {
+  min-height: 38px;
+  width: min(220px, 60vw);
+  margin: 8px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  touch-action: pan-y;
+  cursor: grab;
+}
+
+.project-gallery-controls:active {
+  cursor: grabbing;
+}
+
+.project-gallery-indicator {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: width 160ms ease, background-color 160ms ease;
+}
+
+.project-gallery-indicator.is-active {
+  width: 30px;
+  background: #111;
+}
+
+.project-gallery-empty {
+  width: min(64%, 780px);
+  aspect-ratio: 3 / 2;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.72);
+  font-size: clamp(14px, 2vw, 22px);
+  letter-spacing: 0.08em;
+}
+
+.project-image-lightbox {
+  position: fixed;
+  z-index: 10000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 152px 24px 40px;
+  background: rgba(0, 0, 0, 0.88);
+}
+
+.project-image-lightbox-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 0 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image-lightbox-image {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.project-image-lightbox-close {
+  position: absolute;
+  top: max(104px, calc(env(safe-area-inset-top) + 92px));
+  right: max(24px, env(safe-area-inset-right));
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 40px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.project-image-lightbox-arrow {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 44px;
+  height: 56px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.project-image-lightbox-arrow-previous {
+  left: 0;
+}
+
+.project-image-lightbox-arrow-next {
+  right: 0;
+}
+
+.project-information {
+  width: min(100%, 1120px);
+  margin: 22px auto 0;
+}
+
+.project-information-rule {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 14px;
+  padding: 0 0 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+
+.project-information-wordmark {
+  white-space: nowrap;
+}
+
+.project-detail-title {
+  max-width: 1000px;
+  margin: 26px auto 36px;
+  font-size: clamp(19px, 2.15vw, 27px);
+  font-weight: 700;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.project-detail-panels {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.9fr);
+  gap: 6%;
+  align-items: stretch;
+  padding: 0 4%;
+}
+
+.project-description-panel,
+.project-team-panel {
+  position: relative;
+  min-height: 300px;
+  padding: 36px;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+.project-description-panel {
+  background: #ffffff;
+  font-weight: 400;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.85);
+}
+
+.project-description-decoration {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.project-description-decoration-top {
+  top: -85px;
+  left: -240px;
+  width: 576px;
+  height: 128px;
+}
+
+.project-description-decoration-bottom {
+  right: -80px;
+  bottom: -80px;
+  width: 160px;
+  height: 160px;
+}
+
+.project-description-panel h2,
+.project-team-panel h2 {
+  margin-bottom: 28px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.project-description-panel p,
+.project-team-panel p {
+  font-size: 14px;
+  line-height: 1.85;
+  white-space: pre-line;
+}
+
+.project-team-panel {
+  background: #050505;
+  color: #f5f5f5;
+  box-shadow: 5px 5px 0 #fff;
+}
+
+.project-team-decoration {
+  position: absolute;
+  top: -30px;
+  right: -32px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.project-team-panel h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.project-team-section + .project-team-section {
+  margin-top: 24px;
+}
+
+.project-team-section h3 {
+  margin-bottom: 4px;
+  color: #aaa;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.project-team-section p {
+  font-size: 13px;
+}
+
+.project-detail-back {
+  width: fit-content;
+  display: block;
+  margin: 32px 4% 0 auto;
+  color: #111;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.project-detail-back:hover,
+.project-detail-back:focus-visible {
+  text-decoration: underline;
+}
+
+.project-detail-not-found {
+  margin: 80px 0 16px;
+  text-align: center;
+}
+
+.project-detail-page > .project-detail-back {
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .project-detail-page {
+    padding: 92px 5% 40px;
+  }
+
+  .project-gallery-frame {
+    height: 54vw;
+    min-height: 220px;
+  }
+
+  .project-gallery-image-wrap,
+  .project-gallery-empty {
+    width: 82%;
+  }
+
+  .project-gallery-image-button {
+    border-width: 7px;
+  }
+
+  .project-gallery-arrow {
+    width: 34px;
+    font-size: 38px;
+  }
+
+  .project-gallery-arrow-previous {
+    left: max(0px, calc((100% - 82%) / 4 - 17px));
+  }
+
+  .project-gallery-arrow-next {
+    right: max(0px, calc((100% - 82%) / 4 - 17px));
+  }
+
+  .project-image-lightbox {
+    padding: 136px 12px 24px;
+  }
+
+  .project-image-lightbox-content {
+    padding: 0 44px;
+  }
+
+  .project-image-lightbox-close {
+    top: max(92px, calc(env(safe-area-inset-top) + 84px));
+    right: max(14px, env(safe-area-inset-right));
+  }
+
+  .project-image-lightbox-arrow {
+    width: 32px;
+    font-size: 38px;
+  }
+
+  .project-image-lightbox-arrow-previous {
+    left: 0;
+  }
+
+  .project-image-lightbox-arrow-next {
+    right: 0;
+  }
+
+  .project-information {
+    margin-top: 12px;
+  }
+
+  .project-detail-title {
+    margin: 22px 0 28px;
+    text-align: left;
+  }
+
+  .project-detail-panels {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0;
+  }
+
+  .project-description-panel,
+  .project-team-panel {
+    min-height: auto;
+    padding: 26px;
+  }
+
+  .project-description-panel p,
+  .project-team-panel p {
+    font-size: 13px;
+  }
+
+  .project-detail-back {
+    margin-right: 0;
+  }
+}

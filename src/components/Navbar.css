@@ -70,18 +70,6 @@
   color: #10140a;
 }
 
-body:has(.about-page) .site-header {
-  color: #10140a;
-}
-
-body:has(.about-page) .site-header__link {
-  color: rgb(16 20 10 / 72%);
-}
-
-body:has(.about-page) .site-header__link:hover {
-  color: #10140a;
-}
-
 body:has(.about-page) .site-header__menu-button {
   border-color: rgb(16 20 10 / 28%);
 }
