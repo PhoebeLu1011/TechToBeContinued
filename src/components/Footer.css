@@ -14,6 +14,18 @@
   margin-top: 7px;
 }
 
+.site-footer a {
+  display: inline-block;
+  margin-top: 8px;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.site-footer a:hover {
+  color: var(--color-page-background);
+}
+
 .site-footer__brand strong {
   display: block;
   font-size: 20px;
@@ -23,6 +35,14 @@
 
 .site-footer__brand p:first-of-type {
   margin-top: 42px;
+}
+
+.site-footer__instagram {
+  margin-top: 22px;
+}
+
+.site-footer__instagram a {
+  overflow-wrap: anywhere;
 }
 
 @media (max-width: 1024px) {
