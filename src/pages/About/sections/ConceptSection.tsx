@@ -1,12 +1,12 @@
-import conceptWordmark from '../../../assets/images/branding/01Tech to be continued.png';
 import conceptMark from '../../../assets/images/branding/01技續＋畢業展.png';
 
 export default function ConceptSection() {
   return (
     <section className="about-panel about-panel--concept" aria-labelledby="concept-title">
       <div className="concept-art" aria-hidden="true">
-        <img className="concept-art__mark" src={conceptMark} alt="" />
-        <img className="concept-art__wordmark" src={conceptWordmark} alt="" />
+        <div className="concept-art__frame concept-art__frame--mark">
+          <img src={conceptMark} alt="" />
+        </div>
       </div>
       <div className="concept-copy">
         <h2 id="concept-title">以技為始，續向未來</h2>

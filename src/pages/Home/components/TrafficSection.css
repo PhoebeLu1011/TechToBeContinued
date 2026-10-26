@@ -1,0 +1,115 @@
+.home-traffic {
+  min-height: 696px;
+  padding: 0 max(calc((100vw - 1274px) / 2), 5.8vw) 72px;
+  background: var(--color-page-background);
+  color: #111;
+}
+
+.home-traffic__content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(400px, 532px);
+  align-items: center;
+  gap: 54px;
+  margin-top: 48px;
+}
+
+.home-traffic__directions {
+  display: grid;
+  gap: 32px;
+  list-style: none;
+}
+
+.home-traffic__directions li {
+  max-width: 696px;
+  font-size: clamp(15px, 1.25vw, 18px);
+  letter-spacing: 0.015em;
+  line-height: 1.75;
+}
+
+.home-traffic__directions strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #737d39;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.home-traffic__directions li:nth-child(1) {
+  max-width: 360px;
+}
+
+.home-traffic__directions li:nth-child(2) {
+  max-width: 569px;
+}
+
+.home-traffic__map-shell {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgb(17 17 17 / 55%);
+  background: rgb(255 255 255 / 35%);
+}
+
+.home-traffic__map {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 0;
+}
+
+.home-traffic__map-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+  padding: 8px 14px;
+  border-top: 1px solid rgb(17 17 17 / 55%);
+  background: #111;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home-traffic__map-link:hover {
+  background: #303030;
+}
+
+.home-traffic__map-link:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+  .home-traffic {
+    min-height: 0;
+    padding: 32px 24px 72px;
+  }
+
+  .home-traffic__content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 38px;
+  }
+
+  .home-traffic__directions {
+    gap: 22px;
+  }
+
+  .home-traffic__directions li {
+    max-width: none;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .home-traffic__map-shell {
+    max-width: 532px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 380px) {
+  .home-traffic {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+}
