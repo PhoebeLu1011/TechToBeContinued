@@ -1,17 +1,45 @@
 [
   {
     "id": "question-1",
-    "question": "XXXX",
+    "question": "需要購票或預約入場嗎？",
     "answers": [
-      "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+      "免費入場，無需預約。人潮尖峰時段會實施流量管控。"
     ]
   },
   {
     "id": "question-2",
-    "question": "XXXX",
+    "question": "可以中途離場、再入場嗎？",
     "answers": [
-      "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-      "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+      "可以中途離場，但需重新入場時請至服務台辦理相關手續。"
+    ]
+  },
+  { 
+    "id": "question-3",
+    "question": "可以攜帶食物或飲料嗎？",
+    "answers": [
+      "為維護展場環境，請勿攜帶食物或飲料入場。"
+    ]
+  },
+  {
+    "id": "question-4",
+    "question": "可以攜帶寵物入場嗎？",
+    "answers": [
+      "為維護展場環境，請勿攜帶寵物入場。導盲犬除外。"
+    ]
+  },
+  {
+    "id": "question-5",
+    "question": "展覽可以拍照或錄影嗎？",
+    "answers": [
+      "可自由拍攝，但請勿使用閃光燈或腳架，以免影響作品與他人觀賞。"
+    ]
+  },
+  {
+    "id": "question-6",
+    "question": "有提供停車位嗎？",
+    "answers": [
+      "校區內車位有限，建議搭乘大眾運輸；可利用附近公有停車場（師大路停車場、龍泉停車場）。"
     ]
   }
+  
 ]

@@ -8,7 +8,7 @@ import './qa.css';
 
 export default function QA() {
   const [openQuestions, setOpenQuestions] = useState<Set<string>>(
-    () => new Set(questions.map(({ id }) => id)),
+    () => new Set(questions[0] ? [questions[0].id] : []),
   );
 
   const toggleQuestion = (id: string) => {
