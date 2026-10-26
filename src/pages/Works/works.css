@@ -119,10 +119,11 @@
 }
 
 .works-project-image {
+  display: block;
   width: 100%;
   height: 100%;
-  display: block;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
 
 .works-image-placeholder {
@@ -135,17 +136,18 @@
 
 .works-project-title {
   margin-top: 10px;
-  min-height: 34px;
-  display: flex;
-  align-items: center;
-  padding: 4px 6px;
+  min-height: 54px;
+  display: -webkit-box;
+  padding: 7px 9px;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.3);
-  font-size: 13pt;
-  line-height: 1.2;
+  font-size: clamp(14px, 1.2vw, 17px);
+  line-height: 1.4;
   font-weight: 700;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
 }
 
 .works-group-label {
@@ -155,7 +157,7 @@
   align-items: center;
   padding: 4px 6px;
   background: rgba(0, 0, 0, 0.3);
-  font-size: 13pt;
+  font-size: clamp(14px, 1.1vw, 16px);
   line-height: 1.2;
 }
 

@@ -1,12 +1,16 @@
-import heroBrandArtwork from '../../assets/images/branding/figma-hero-brand.png';
-import heroTechArtwork from '../../assets/images/branding/figma-hero-decoration.png';
+import SponsorGrid from '../../components/Sponsors/SponsorGrid';
+import {
+  exhibitionDateRange,
+  exhibitionSchedule,
+} from '../../data/exhibitionSchedule';
+import heroBrandArtwork from '../../assets/images/branding/01技續＋畢業展.png';
 import stripedArrow from '../../assets/images/decorations/02箭頭七.png';
 import whiteArrow from '../../assets/images/decorations/02大白箭頭.png';
 import sponsorArrow from '../../assets/images/decorations/02箭頭一.png';
-import trafficMap from '../../assets/images/map-maker-taiwan-standard.png';
 import { Link } from 'react-router-dom';
 import newsArticles from '../../data/news';
 import projects from '../../data/projects';
+import TrafficSection from './components/TrafficSection';
 import './home.css';
 
 const featuredProjectIds = [
@@ -23,6 +27,8 @@ const featuredProjects = featuredProjectIds.flatMap((id) => {
   return project ? [project] : [];
 });
 
+const [dayOne, dayTwo] = exhibitionSchedule;
+
 export default function Home() {
   return (
     <main className="home-page">
@@ -30,17 +36,16 @@ export default function Home() {
         <img className="home-hero__striped-arrow" src={stripedArrow} alt="" aria-hidden="true" />
 
         <div className="home-hero__content">
-          <img className="home-hero__glyph" src={heroTechArtwork} alt="" aria-hidden="true" />
           <img
             className="home-hero__artwork"
             src={heroBrandArtwork}
-            alt="2026 GRADUATION EXHIBITION"
+            alt="技續 2026 Graduation Exhibition"
           />
 
           <dl className="home-hero__details">
             <div className="home-hero__detail">
               <dt>日期</dt>
-              <dd>2026.12.12 - 12.13</dd>
+              <dd>{exhibitionDateRange}</dd>
             </div>
             <div className="home-hero__detail">
               <dt>地點</dt>
@@ -92,28 +97,42 @@ export default function Home() {
         <h2 className="home-schedule__visually-hidden" id="home-schedule-title">展覽日期與時間</h2>
         <div className="home-schedule__composition home-schedule__composition--top">
           <img className="home-schedule__arrow" src={whiteArrow} alt="" />
-          <span className="home-schedule__date home-schedule__date--sat-top">12.12(Sat)</span>
-          <span className="home-schedule__date home-schedule__date--sun-top">12.13(Sun)</span>
+          <span className="home-schedule__date home-schedule__date--sat-top">{dayOne.dateLabel}</span>
+          <span className="home-schedule__date home-schedule__date--sun-top">{dayTwo.dateLabel}</span>
         </div>
-        <article className="home-schedule__card" aria-label="展覽開放與閉幕時間">
+        <article className="home-schedule__card" aria-label="兩日展覽與典禮時間">
           <h3 className="home-schedule__visually-hidden">展覽時間</h3>
           <span className="home-schedule__card-rule" aria-hidden="true" />
-          <span className="home-schedule__card-divider home-schedule__card-divider--open" aria-hidden="true" />
-          <span className="home-schedule__card-time home-schedule__card-time--open">10:00</span>
-          <span className="home-schedule__card-label home-schedule__card-label--open">開放入場</span>
-          <span className="home-schedule__card-divider home-schedule__card-divider--close" aria-hidden="true" />
-          <span className="home-schedule__card-day home-schedule__card-day--sat">12.12 (Sat)</span>
-          <span className="home-schedule__card-day home-schedule__card-day--sun">12.13 (Sun)</span>
-          <span className="home-schedule__card-time home-schedule__card-time--sat">18:00</span>
-          <span className="home-schedule__card-time home-schedule__card-time--sun">17:00</span>
-          <span className="home-schedule__card-label home-schedule__card-label--close">展覽閉幕</span>
+          <span className="home-schedule__card-divider home-schedule__card-divider--day-one" aria-hidden="true" />
+          <span className="home-schedule__card-day home-schedule__card-day--one">{dayOne.dateLabel}</span>
+          <span className="home-schedule__card-hours home-schedule__card-hours--one">
+            {dayOne.openingTime}–{dayOne.closingTime}
+          </span>
+          <span className="home-schedule__card-label home-schedule__card-label--one">
+            {dayOne.ceremonyLabel}{' '}
+            <time dateTime={`${dayOne.date}T${dayOne.ceremonyTime}`}>{dayOne.ceremonyTime}</time>
+          </span>
+
+          <span className="home-schedule__card-divider home-schedule__card-divider--day-two" aria-hidden="true" />
+          <span className="home-schedule__card-day home-schedule__card-day--two">{dayTwo.dateLabel}</span>
+          <span className="home-schedule__card-hours home-schedule__card-hours--two">
+            {dayTwo.openingTime}–{dayTwo.closingTime}
+          </span>
+          <span className="home-schedule__card-label home-schedule__card-label--two">
+            {dayTwo.ceremonyLabel}{' '}
+            <time dateTime={`${dayTwo.date}T${dayTwo.ceremonyTime}`}>{dayTwo.ceremonyTime}</time>
+          </span>
+
           <span className="home-schedule__card-footer-rule" aria-hidden="true" />
-          <p className="home-schedule__card-note">* 17:00 展期正式落幕，感謝蒞臨指教</p>
+          <p className="home-schedule__card-note">
+            ＊{dayOne.dateLabel.slice(0, 5)} {dayOne.ceremonyLabel} {dayOne.ceremonyTime}｜
+            {dayTwo.dateLabel.slice(0, 5)} {dayTwo.ceremonyLabel} {dayTwo.ceremonyTime}
+          </p>
         </article>
         <div className="home-schedule__composition home-schedule__composition--lower">
           <img className="home-schedule__arrow" src={whiteArrow} alt="" />
-          <span className="home-schedule__date home-schedule__date--sat-lower">12.12(Sat)</span>
-          <span className="home-schedule__date home-schedule__date--sun-lower">12.13(Sun)</span>
+          <span className="home-schedule__date home-schedule__date--sat-lower">{dayOne.dateLabel}</span>
+          <span className="home-schedule__date home-schedule__date--sun-lower">{dayTwo.dateLabel}</span>
         </div>
       </section>
 
@@ -137,23 +156,11 @@ export default function Home() {
         <div className="home-sponsors__bowl" aria-hidden="true" />
         <h2 className="home-section-title" id="home-sponsors-title">贊助廠商</h2>
         <img className="home-sponsors__arrow home-sponsors__arrow--left" src={sponsorArrow} alt="" />
-        <div className="home-sponsors__logos" aria-label="贊助廠商標誌待補">
-          {[1, 2, 3, 4, 5].map((item) => <div className="home-sponsors__placeholder" key={item} />)}
-        </div>
+        <SponsorGrid className="home-sponsors__logos" />
         <img className="home-sponsors__arrow home-sponsors__arrow--right" src={sponsorArrow} alt="" />
       </section>
 
-      <section className="home-traffic" aria-labelledby="home-traffic-title">
-        <h2 className="home-section-title" id="home-traffic-title">交通資訊</h2>
-        <div className="home-traffic__content">
-          <ul className="home-traffic__directions">
-            <li>搭乘捷運 • 松山新店線 古亭站：5 號出口步行約 7 分鐘即可到達</li>
-            <li>搭乘公車 • 師大綜合大樓站：18、235、237、278、295、672、907、和平幹線</li>
-            <li>自行開車 本校區設有地下收費停車場，導航至和平校區羅馬廣場地下停車場 收費方式：70 元每小時</li>
-          </ul>
-          <img className="home-traffic__map" src={trafficMap} alt="國立臺灣師範大學和平校區周邊地圖" />
-        </div>
-      </section>
+      <TrafficSection />
     </main>
   );
 }

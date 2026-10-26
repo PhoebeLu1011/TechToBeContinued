@@ -10,29 +10,32 @@ import News from './pages/News';
 import NewsDetail from './pages/News/Detail';
 import About from './pages/About';
 import QA from './pages/QA';
+import './App.css';
 
 export default function App() {
   return (
     <Router>
-      {/* 💡 2. 裝在 Router 的第一線，確保它能抓到網址變化並第一時間重設捲軸 */}
-      <ScrollToTop /> 
-      
-      <Navbar />
-      
-      <div style={{ width: '100%' }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/works" element={<Works />} />
-          <Route path="/works/:projectId" element={<ProjectDetail />} />
-          <Route path="/exhibition" element={<Exhibition />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/news/:newsId" element={<NewsDetail />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/qa" element={<QA />} />
-        </Routes>
-      </div>
+      <div className="app-shell">
+        {/* Reset scroll position whenever the route changes. */}
+        <ScrollToTop />
 
-      <Footer />
+        <Navbar />
+
+        <div className="app-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/works" element={<Works />} />
+            <Route path="/works/:projectId" element={<ProjectDetail />} />
+            <Route path="/exhibition" element={<Exhibition />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/news/:newsId" element={<NewsDetail />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/qa" element={<QA />} />
+          </Routes>
+        </div>
+
+        <Footer />
+      </div>
     </Router>
   );
 }
